@@ -1,35 +1,89 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import FullscreenToggle from "./components/fullscreen-toggle";
+import KeyboardHelp from "./components/keyboard-help";
+import Sidebar from "./components/sidebar";
+import ScrollIndicator from "./components/scroll-indicator";
+import CaseStudies from "./components/slides/case-studies";
+import ChartSlide from "./components/slides/chart-slide";
+import Discussion from "./components/slides/discussion";
+import FutureProof from "./components/slides/future-proof";
+import LessonsLearned from "./components/slides/lessons-learned";
+import RiseOfAI from "./components/slides/rise-of-ai";
+import StudentA from "./components/slides/student-a";
+import StudentB from "./components/slides/student-b";
+import SydneyTech from "./components/slides/sydney-tech";
+import ThankYou from "./components/slides/thank-you";
+import TitleSlide from "./components/slides/title-slide";
+import { ThemeProvider } from "@/components/theme-provider";
+import { useKeyboardNavigation } from "./hooks/use-keyboard-navigation";
+import SlideProgress from "./components/slide-progress";
+import ParticleBackground from "./components/particle-background";
+import V0Vercel from "./components/slides/v0-vercel";
+import TypesOfAICoders from "./components/slides/types-of-ai-coders";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  useKeyboardNavigation();
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <main className="relative">
+          <ParticleBackground />
+          <Sidebar />
+          <ScrollIndicator />
+          <FullscreenToggle />
+          <KeyboardHelp />
+          <SlideProgress />
+
+          <section id="title">
+            <TitleSlide />
+          </section>
+
+          <section id="rise-of-ai">
+            <RiseOfAI />
+          </section>
+
+          <section id="sydney-tech">
+            <SydneyTech />
+          </section>
+
+          <section id="chart">
+            <ChartSlide />
+          </section>
+
+          <section id="case-studies">
+            <CaseStudies />
+          </section>
+
+          <section id="v0-vercel">
+            <V0Vercel />
+          </section>
+
+          <section id="student-a">
+            <StudentA />
+          </section>
+
+          <section id="student-b">
+            <StudentB />
+          </section>
+
+          <section id="types-of-ai-coders">
+            <TypesOfAICoders />
+          </section>
+
+          <section id="lessons-learned">
+            <LessonsLearned />
+          </section>
+
+          <section id="future-proof">
+            <FutureProof />
+          </section>
+
+          <section id="thank-you">
+            <ThankYou />
+          </section>
+        </main>
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
