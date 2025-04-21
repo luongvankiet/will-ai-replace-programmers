@@ -1,10 +1,12 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import FullscreenToggle from "./components/fullscreen-toggle";
 import KeyboardHelp from "./components/keyboard-help";
-import Sidebar from "./components/sidebar";
+import ParticleBackground from "./components/particle-background";
 import ScrollIndicator from "./components/scroll-indicator";
+import Sidebar from "./components/sidebar";
+import SlideProgress from "./components/slide-progress";
 import CaseStudies from "./components/slides/case-studies";
 import ChartSlide from "./components/slides/chart-slide";
-import Discussion from "./components/slides/discussion";
 import FutureProof from "./components/slides/future-proof";
 import LessonsLearned from "./components/slides/lessons-learned";
 import RiseOfAI from "./components/slides/rise-of-ai";
@@ -13,12 +15,9 @@ import StudentB from "./components/slides/student-b";
 import SydneyTech from "./components/slides/sydney-tech";
 import ThankYou from "./components/slides/thank-you";
 import TitleSlide from "./components/slides/title-slide";
-import { ThemeProvider } from "@/components/theme-provider";
-import { useKeyboardNavigation } from "./hooks/use-keyboard-navigation";
-import SlideProgress from "./components/slide-progress";
-import ParticleBackground from "./components/particle-background";
-import V0Vercel from "./components/slides/v0-vercel";
 import TypesOfAICoders from "./components/slides/types-of-ai-coders";
+import V0Vercel from "./components/slides/v0-vercel";
+import { useKeyboardNavigation } from "./hooks/use-keyboard-navigation";
 
 function App() {
   useKeyboardNavigation();

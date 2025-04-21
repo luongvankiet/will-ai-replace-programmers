@@ -54,7 +54,7 @@ export default function SydneyTech() {
             className="flex justify-center items-center"
           >
             <img
-              src="/github-copilot.gif"
+              src="https://luongvankiet.github.io/will-ai-replace-programmers/github-copilot.gif"
               alt="Sydney skyline with tech overlay"
               className="object-cover rounded-lg w-full"
             />

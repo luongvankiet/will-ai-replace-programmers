@@ -24,7 +24,7 @@ export default function RiseOfAI() {
             className="flex justify-center items-center"
           >
             <img
-              src="/chatGPT.gif"
+              src="https://luongvankiet.github.io/will-ai-replace-programmers/chatGPT.gif"
               alt="AI coding assistant showing code suggestions"
               className="w-full object-cover rounded-lg"
             />

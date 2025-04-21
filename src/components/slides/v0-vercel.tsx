@@ -45,7 +45,11 @@ export default function V0Vercel() {
                 <h3 className="text-2xl font-semibold mb-4">v0.dev</h3>
                 <div className="w-full h-[200px] rounded-md overflow-hidden mb-4">
                   <img
-                    src={theme === "dark" ? "/v0-dark.png" : "/v0-light.png"}
+                    src={
+                      theme === "dark"
+                        ? "https://luongvankiet.github.io/will-ai-replace-programmers/v0-dark.png"
+                        : "https://luongvankiet.github.io/will-ai-replace-programmers/v0-light.png"
+                    }
                     alt="Student working with both AI tools and manual coding"
                     className="object-fit w-50 mx-auto"
                   />
@@ -69,7 +73,7 @@ export default function V0Vercel() {
                 <h3 className="text-2xl font-semibold mb-4">Vercel</h3>
                 <div className="relative w-full h-[200px] rounded-md mb-4 pt-13">
                   <img
-                    src="/vercel.png"
+                    src="https://luongvankiet.github.io/will-ai-replace-programmers/vercel.png"
                     alt="Student working with both AI tools and manual coding"
                     className="object-cover rounded-md w-70 mx-auto"
                   />

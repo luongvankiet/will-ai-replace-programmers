@@ -34,7 +34,10 @@ export default function StudentB() {
   useEffect(() => {
     const interval = setInterval(() => {
       setImg((prevImg) =>
-        prevImg === "/coding.gif" ? "/error-windows.gif" : "/coding.gif"
+        prevImg ===
+        "https://luongvankiet.github.io/will-ai-replace-programmers/coding.gif"
+          ? "https://luongvankiet.github.io/will-ai-replace-programmers/error-windows.gif"
+          : "https://luongvankiet.github.io/will-ai-replace-programmers/coding.gif"
       );
     }, 2500);
 

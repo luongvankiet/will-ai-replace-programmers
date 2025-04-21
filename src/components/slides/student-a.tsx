@@ -46,7 +46,7 @@ export default function StudentA() {
                 <h3 className="text-2xl font-semibold mb-4">Student A</h3>
                 <div className="relative w-full h-[250px] rounded-md overflow-hidden mb-4">
                   <img
-                    src="/deploy.gif"
+                    src="https://luongvankiet.github.io/will-ai-replace-programmers/deploy.gif"
                     alt="Student working with both AI tools and manual coding"
                     className="object-fill w-full h-full"
                   />
