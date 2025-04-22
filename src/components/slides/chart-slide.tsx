@@ -96,7 +96,7 @@ export default function ChartSlide() {
               <div className="w-full max-w-lg">
                 <ChartContainer
                   config={chartConfig}
-                  className="mx-auto aspect-square max-h-[500px]"
+                  className="mx-auto aspect-square max-h-[500px] [&_.recharts-pie-label-text]:fill-foreground [&_.recharts-pie-label-line]:stroke-muted-foreground"
                 >
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
@@ -107,6 +107,7 @@ export default function ChartSlide() {
                       <Pie
                         data={chartData}
                         dataKey="value"
+                        label
                         nameKey="label"
                         innerRadius={60}
                         strokeWidth={5}
