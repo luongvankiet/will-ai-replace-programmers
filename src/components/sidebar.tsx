@@ -12,8 +12,8 @@ const navItems = [
   { name: "v0.dev & Vercel", href: "#v0-vercel" },
   { name: "Student A", href: "#student-a" },
   { name: "Student B", href: "#student-b" },
-  { name: "Types of AI Coders", href: "#types-of-ai-coders" },
   { name: "Lessons", href: "#lessons-learned" },
+  { name: "Types of AI Coders", href: "#types-of-ai-coders" },
   { name: "Future-Proof", href: "#future-proof" },
   { name: "Thank You", href: "#thank-you" },
 ];

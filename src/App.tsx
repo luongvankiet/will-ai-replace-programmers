@@ -64,12 +64,12 @@ function App() {
             <StudentB />
           </section>
 
-          <section id="types-of-ai-coders">
-            <TypesOfAICoders />
-          </section>
-
           <section id="lessons-learned">
             <LessonsLearned />
+          </section>
+
+          <section id="types-of-ai-coders">
+            <TypesOfAICoders />
           </section>
 
           <section id="future-proof">

@@ -15,8 +15,8 @@ export default function StudentB() {
   const [img, setImg] = useState("/coding.gif");
 
   const studentB = [
-    "Used v0 to create a dashboard UI",
-    "Deployed but ran into errors",
+    "Used v0 to create an app UI",
+    "Couldn't get it to work",
     "Didn't understand what the error meant",
     "Kept copy-pasting suggestions from AI",
     "Outcome: App never worked",
